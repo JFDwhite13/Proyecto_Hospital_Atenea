@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listado de especies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Hospital</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link" href="CrearDoctor.html">Crear Doctor</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="ListarDoctor.html">Listar Doctores</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="CrearPaciente.html">Crear Paciente</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="ListarPacientes.html">Listar Pacientes</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="CrearCita.html">Crear Cita</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="ListarCitas.html">Listar Citas</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Tabla de Doctores</h1>
+      <table id="especies-table" class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Consultorio</th>
+            <th>Email</th>
+			<th>Especialidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- La tabla se llenará con JavaScript -->
+        </tbody>
+      </table>
+    </div>
+    <script src="listardoctor.js"></script>
+    
+  </body>

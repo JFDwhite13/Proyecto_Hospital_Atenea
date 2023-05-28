@@ -1,0 +1,15 @@
+{
+    //el objetivo de este archivo es definir los parametros que maneja ts cuando convierta de ts a js (transpilar)
+    "compilerOptions": {
+        "target": "ES6", //version de js
+        "module": "CommonJS", //todo se convierte en modulos en ts, casi siempre es common js
+        "rootDir": "src", //ubicacion de los documentos del proyecto- directorio raiz
+        "outDir": "dist", //una vez de la conversion donde guardaria los js
+        "strict": true, //decirle a typescript que siga las reglas de codificacion  estricta y minuciosa
+        "esModuleInterop": true //se le indica al programa que operara entre common js y es6
+    },
+    //aca se incluye
+    "include": ["src/**/*"],
+    //aca se indica que archivos se realiza la busqueda
+    "exclude": ["node_modules"]
+}

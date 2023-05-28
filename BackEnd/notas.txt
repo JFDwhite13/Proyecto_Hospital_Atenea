@@ -1,0 +1,4 @@
+npx typedoc --entryPointStrategy expand ./src //para documentar
+npm install nodemon - es para reiniciar
+npx prisma init --datasource-provider sqlite
+npx prisma format
